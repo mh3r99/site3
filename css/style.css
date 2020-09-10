@@ -1,0 +1,526 @@
+body {
+  background: #f6f6f6;
+  font-family: 'Poppins', sans-serif;
+}
+
+* {
+  /*  outline: 2px solid red;*/
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;}
+
+li {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+a {
+  text-decoration: none
+}
+
+header {
+  background: #f6f6f6;
+  padding: 22px 0;
+}
+
+.header-container {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.header-container a {
+  color: #000;
+  font-size: 16px;
+  padding: 27px 6px;
+  margin-right: 63px;
+}
+
+.header-container a:hover {
+  background: #ffea00;
+}
+
+#menu-checkbox {
+  display: none;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+.top-slide {
+  background: url(../img/slider_bg.jpg) no-repeat;
+  padding-top: 120px;
+  padding-bottom: 280px;
+}
+
+.top-container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.top-slide h2 {
+  background: #ffea00;
+  display: inline;
+  font-size: 70px;
+  padding: 0 13px;
+}
+
+.top-slide div:nth-child(2) {
+  margin-bottom: 10px;
+}
+
+.top-slide p {
+  background: #414146;
+  display: inline;
+  font-size: 24px;
+  padding: 0 4px;
+  color: #fff;
+}
+
+.specialize-container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.specialize-container h3 {
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.specialize-container p {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+p.first-p {
+  font-size: 20px;
+  color: #fff;
+}
+
+p.n-p {
+  font-size: 13px;
+  color: #fff;
+  padding: 10.4px 2px;
+}
+
+.bottom-card-1 {
+  background: #414146;
+  position: relative;
+  top: -30px;
+}
+
+.bottom-card-n {
+  background: #414146;
+  position: relative;
+  top: -60.4px;
+}
+
+.middle-card {
+  position: relative;
+  top: -45px
+}
+
+.middle-card p {
+  margin: 0;
+  font-size: 20px;
+}
+
+.specialize-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.portfolio {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.portfolio h4 {
+  background: #424147;
+  padding: 0 8px;
+  font-size: 18px;
+  display: inline-block;
+  color: #fae506;
+  margin-bottom: 30px;
+}
+
+.portfolio p {
+  color: #4e4d52;
+  font-size: 16px;
+}
+
+.toggles button {
+  background: transparent;
+  border: none;
+  color: #4e4d52;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 20px 5px;
+}
+
+.toggles button:after {
+  content: ' / ';
+}
+
+.toggles button:last-child:after {
+  content: '';
+}
+
+.posts {
+  width: 90%;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: auto auto auto auto;
+}
+
+.brand-slider {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.brand-slider h4 {
+  margin-top: 40px;
+  background: #424147;
+  padding: 0 8px;
+  font-size: 18px;
+  display: inline-block;
+  color: #fae506;
+  margin-bottom: 30px;
+}
+
+.brand-slider p {
+  color: #4e4d52;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.fa-caret-square-left {
+  position: absolute;
+  font-size: 30px;
+  top: 15px;
+  left: -55px;
+}
+
+.fa-caret-square-right {
+  position: absolute;
+  font-size: 30px;
+  top: 15px;
+  right: -55px;
+}
+
+.fa-caret-square-left:hover {
+  color: black;
+}
+
+.fa-caret-square-right:hover {
+  color: black;
+}
+
+footer {
+  background: #414146;
+  padding: 30px 0;
+  color: #fff;
+}
+
+footer h4 {
+  font-size: 18px;
+}
+
+footer p {
+  font-size: 13px;
+}
+
+.footer-container {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 30% 31% 25%;
+  grid-column-gap: 5%;
+}
+
+.about-us p {
+  margin-top: 30px;
+}
+
+.footer-container .about-us a {
+  background: #000;
+  border-bottom: 2px solid #eeda00;
+  color: #fff;
+  font-size: 15px;
+  padding: 15px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  display: inline-block;
+}
+
+.images {
+  margin-top: 20px;
+}
+
+.tweets h4.social {
+  margin-top: 45px;
+}
+
+.tweets .tweet p {
+  margin-top: 30px;
+}
+
+.fab {
+  font-size: 20px;
+  margin-right: 9px;
+  position: relative;
+  top: 9px;
+}
+
+.tweets .soc {
+  margin-top: 70px
+}
+
+.tweets span {
+  color: #ffea00;
+}
+
+.tweets .soc i {
+  position: relative;
+  top: -22px;
+  left: 180px;
+  margin-right: 1px;
+  font-size: 20px;
+  color: #111;
+}
+
+.contacts .contact {
+  margin-top: 30px;
+}
+
+.contacts .contact p {
+  margin-top: 5px
+}
+
+.contacts .contact p img {
+  position: relative;
+  margin-right: 15px;
+  top: 9px;
+}
+
+.contacts .contact span.email {
+  color: #ffea00;
+  margin-left: 0;
+}
+
+.contacts .contact span {
+  margin-left: 45px
+}
+
+.follow h4 {
+  margin-top: 50px;
+}
+
+.follow p {
+  margin-top: 23px;
+}
+
+.follow p.input-p {
+  margin-top: -1px;
+}
+
+.follow input {
+  width: 233px;
+  margin-right: 5px;
+  background: none;
+  border: 0;
+  border-bottom: 2px solid #eeda00;
+  color: #fff;
+  outline: none;
+  font-size: 16px;
+}
+
+.follow img {
+  position: relative;
+  top: 9px;
+}
+
+.nav2 {
+  width: 100%;
+  background: #000;
+}
+
+.nav2 .main-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.nav2 a {
+  font-family: Calibri;
+  color: #fff;
+  font-size: 16px;
+  padding: 27px 6px;
+  margin-right: 63px;
+}
+
+.nav2 a:hover {
+  color: #eeda00;
+}
+
+@media screen and (max-width: 765px) {
+  body {
+    background: #f6f6f6;
+    font-family: 'Poppins', sans-serif;
+  }
+  .header-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  .main-menu {
+    display: none;
+  }
+  .main-menu li {
+    width: 100%;
+    display: block;
+    font-size: 12px;
+  }
+  .main-menu a {
+    display: block;
+    padding: 8px;
+  }
+  .toggle-button {
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    color: #000;
+    margin-top: 20px
+  }
+  .toggle-button:after {
+    content: attr(data-open);
+    display: block;
+  }
+  #menu-checkbox:checked + nav[role="navigation"] .main-menu {
+    display: block;
+  }
+  #menu-checkbox:checked + nav[role="navigation"] .toggle-button:after {
+    content: attr(data-close);
+  }
+  .header-container a {
+    margin-right: -65px;
+  }
+  .main-menu {
+    position: relative;
+    top: 18px;
+    right: 110px;
+  }
+  .top-slide {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .top-slide h2 {
+    font-size: 32px;
+  }
+  .top-slide p {
+    font-size: 16px;
+  }
+  .specialize-container p {
+    font-size: 16px;
+  }
+  .specialize-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .bottom-card-1 {
+    width: 250px;
+    margin: 0 auto;
+  }
+  .bottom-card-n {
+    width: 250px;
+    margin: 0 auto;
+  }
+  .portfolio p {
+    margin-bottom: 20px
+  }
+  .toggles button {
+    margin: 11px
+  }
+  .posts {
+    width: 90%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: auto;
+  }
+  .footer-container {
+    width: 90%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .footer-container .about-us a {
+    background: #000;
+    border-bottom: 2px solid #eeda00;
+    color: #fff;
+    font-size: 15px;
+    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    display: inline-block;
+    margin-left: 100px
+  }
+  .images {
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+  .tweets .tweet p {
+    font-size: 10px;
+  }
+  .tweets .soc i {
+    position: inherit;
+    margin-top: 8px;
+    margin-bottom: 40px;
+    font-size: 30px;
+  }
+  .nav2 {
+    display: none;
+  }
+}
